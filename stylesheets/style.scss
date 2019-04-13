@@ -1,0 +1,40 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto:300,400,900');
+// CONSTS
+$fontMain: Roboto;
+$fontTitle: 'Caveat Brush';
+
+// GENERAL
+body {
+    font-family: $fontMain, sans-serif;
+    height: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+// LANDING
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.landing-container {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-family: $fontTitle;
+        font-size: 2.5rem;
+    }
+}
