@@ -3,7 +3,247 @@ body {
   font-family: Roboto, sans-serif;
   height: 100%;
   height: 100vh;
+  width: 100%;
   height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.wrapper.closed {
+  display: none;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 25px;
+  right: 22px;
+}
+
+.toggle {
+  display: block;
+  cursor: pointer;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle input + div {
+  width: 20px;
+  height: 14px;
+  position: relative;
+}
+
+.toggle input + div div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.toggle input + div div span {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.toggle input + div div span:first-child {
+  top: 0;
+}
+
+.toggle input + div div span:first-child:before, .toggle input + div div span:first-child:after {
+  top: 0;
+}
+
+.toggle input + div div span:last-child {
+  bottom: 0;
+}
+
+.toggle input + div div span:last-child:before, .toggle input + div div span:last-child:after {
+  bottom: 0;
+}
+
+.toggle input + div div span:before, .toggle input + div div span:after {
+  content: '';
+  display: block;
+  width: 47%;
+  height: 2px;
+  border-radius: 1px;
+  background: #ffffff;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: border-radius .3s ease, -webkit-transform .5s ease;
+  transition: border-radius .3s ease, -webkit-transform .5s ease;
+  transition: transform .5s ease, border-radius .3s ease;
+  transition: transform .5s ease, border-radius .3s ease, -webkit-transform .5s ease;
+}
+
+.toggle input + div div span:before {
+  left: 0;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: translate(1px, 0) scaleX(1.1);
+          transform: translate(1px, 0) scaleX(1.1);
+}
+
+.toggle input + div div span:after {
+  right: 0;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: translate(-1px, 0) scaleX(1.1);
+          transform: translate(-1px, 0) scaleX(1.1);
+}
+
+.toggle input + div svg {
+  display: block;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  width: 44px;
+  height: 44px;
+  stroke-linecap: round;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -22px 0 0 -22px;
+  stroke-dasharray: 0 82.801 8 82.801;
+  stroke-dashoffset: 82.801;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, -webkit-transform .5s ease;
+  transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, -webkit-transform .5s ease;
+  transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, transform .5s ease;
+  transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, transform .5s ease, -webkit-transform .5s ease;
+}
+
+.toggle input + div svg:nth-child(3) {
+  -webkit-transform: rotate(180deg) scale(1);
+          transform: rotate(180deg) scale(1);
+}
+
+.toggle input:checked + div div {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle input:checked + div div span:before, .toggle input:checked + div div span:after {
+  background: #000000;
+}
+
+.toggle input:checked + div div span:first-child:before {
+  -webkit-transform: rotate(45deg) translate(2.2px, -3px) scaleX(1.05);
+          transform: rotate(45deg) translate(2.2px, -3px) scaleX(1.05);
+}
+
+.toggle input:checked + div div span:first-child:after {
+  -webkit-transform: rotate(-45deg) translate(-2.2px, -3px) scaleX(1.05);
+          transform: rotate(-45deg) translate(-2.2px, -3px) scaleX(1.05);
+}
+
+.toggle input:checked + div div span:last-child:before {
+  -webkit-transform: rotate(-45deg) translate(2.2px, 3px) scaleX(1.05);
+          transform: rotate(-45deg) translate(2.2px, 3px) scaleX(1.05);
+}
+
+.toggle input:checked + div div span:last-child:after {
+  -webkit-transform: rotate(45deg) translate(-2.2px, 3px) scaleX(1.05);
+          transform: rotate(45deg) translate(-2.2px, 3px) scaleX(1.05);
+}
+
+.toggle input:checked + div svg {
+  stroke: #000000;
+  stroke-dashoffset: 62;
+  stroke-dasharray: 0 82.801 62 82.801;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.toggle input:checked + div svg:nth-child(3) {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+nav.menu-overlay {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  position: fixed;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav.menu-overlay.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-item {
+  margin: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+nav a.logo {
+  font-family: "Caveat Brush";
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: #c2c2c2;
+}
+
+nav .nav-items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .swiper-container {
@@ -16,9 +256,17 @@ body {
   background-size: cover;
 }
 
-.landing-container {
+.darkener {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   z-index: 2;
+}
+
+.landing-container {
+  position: absolute;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,11 +278,91 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .landing-container h1 {
   color: white;
   font-family: "Caveat Brush";
   font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
 }
+
+.landing-container .landing-subtitle {
+  margin: 0px 1em;
+}
+
+.landing-container p {
+  margin: 0;
+  color: white;
+  line-height: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* mobile-small */
+/* mobile-large */
+/* mobile-small-landscape */
+/* mobile-large-landscape */
+/* tablet-small-landscape */
+/* tablet-large-landscape */
+/* tablet-small */
+/* tablet-large */
+/* desktop-x-small-landscape */
+/* desktop-x-small */
+/* desktop-small-landscape */
+/* desktop-small */
+/* desktop-medium-landscape */
+/* desktop-medium */
+/* desktop-large */
+@media all and (min-width: 1281px) {
+  .hamburger {
+    display: none;
+  }
+  nav.menu-overlay {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: unset;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav a {
+    color: white;
+  }
+  nav .nav-items-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/* desktop-xlarge */
 /*# sourceMappingURL=style.css.map */

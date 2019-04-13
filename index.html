@@ -18,23 +18,64 @@
     </head>
 
     <body>
-        
-        <div class="landing-container">
-            <h1>Morocco Adventures Travel</h1>
-        </div>
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" style="background-image:url(assets/images/DSC_1145.JPG)">
+        <!-- Navigation Bar -->
+        <label class="toggle hamburger">
+            <input type="checkbox" id="togglemenu">
+            <div>
+                <div>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="swiper-slide" style="background-image:url(assets/images/DSC_0421.JPG)">
-                </div>
-                <div class="swiper-slide" style="background-image:url(assets/images/DSC_0102.JPG)">
+                <svg>
+                    <use xlink:href="#path">
+                </svg>
+                <svg>
+                    <use xlink:href="#path">
+                </svg>
+            </div>
+        </label>
+        <nav class="menu-overlay">
+            <div class="nav-item"><a href="./index.html" class="logo">Morocco Adventures Travel</a>
+            </div>
+            <div class="nav-items-container">
+                <div class="nav-item"><a href="#">Mountains</a></div>
+                <div class="nav-item"><a href="#">Valleys</a></div>
+                <div class="nav-item"><a href="#">Sea & Sand</a></div>
+                <div class="nav-item"><a href="#">Tours</a></div>
+                <div class="nav-item"><a href="#">Info</a></div>
+            </div>
+        </nav>
+        <!-- Content -->
+        <div class="wrapper">
+            <div class="landing-container">
+                <h1>Morocco Adventures Travel</h1>
+                <div class="landing-subtitle">
+                    <p>Est veniam nostrud occaecat veniam cillum deserunt dolore dolor.</p>
                 </div>
             </div>
-            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="darkener"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"
+                        style="background-image:url(assets/images/DSC_1145.JPG)">
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image:url(assets/images/DSC_0421.JPG)">
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image:url(assets/images/DSC_0102.JPG)">
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+            <!-- Footer -->
         </div>
+        <!-- Extra -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+            </symbol>
+        </svg>
         <!-- scripts -->
         <script src="js/swiper/swiper.min.js"></script>
         <script src="js/scripts.js"></script>
