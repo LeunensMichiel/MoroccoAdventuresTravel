@@ -9,12 +9,14 @@
         <meta name="description" content="Website of Morroco Adventures Travel">
         <meta name="author" content="Leunes Media">
 
-        <link rel="stylesheet" href="stylesheets/normalize.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
         <link rel="stylesheet" href="stylesheets/style.css">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@1.9.1/css/boxicons.min.css'
-            rel='stylesheet'>
+        rel='stylesheet'>
         <link href="stylesheets/swiper/swiper.min.css" rel="stylesheet">
-
     </head>
 
     <body>
@@ -37,13 +39,40 @@
         <nav class="menu-overlay">
             <div class="nav-item"><a href="./index.html" class="logo">Morocco Adventures Travel</a>
             </div>
-            <div class="nav-items-container">
-                <div class="nav-item"><a href="#">Mountains</a></div>
-                <div class="nav-item"><a href="#">Valleys</a></div>
-                <div class="nav-item"><a href="#">Sea & Sand</a></div>
-                <div class="nav-item"><a href="#">Tours</a></div>
-                <div class="nav-item"><a href="#">Info</a></div>
-            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="/path/to/.../">Mountains</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/path/to/.../">Valleys</a>
+                </li>
+                <li class="menu-item has-children">
+                    <a href="/path/to/.../">Test
+                        <span class="dropdown-icon"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="menu-item has-children">
+                            <a href="/path/to/.../">double
+                                <span class="dropdown-icon"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="/path/to/.../">Lol</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/path/to/.../">Lol2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/path/to/.../">Lol2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="/path/to/.../">About</a>
+                </li>
+            </ul>
         </nav>
         <!-- Content -->
         <div class="wrapper">
@@ -77,6 +106,9 @@
             </symbol>
         </svg>
         <!-- scripts -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
         <script src="js/swiper/swiper.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
