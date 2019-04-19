@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
-    // //PUUR VOOR TESTING
-    // document.querySelector('.menu-overlay').classList.toggle('open');
-
 
     if (document.querySelector('#togglemenu')) {
         document.querySelector('#togglemenu').checked = false;
@@ -24,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('#togglemenu').checked = false;
         });
     }
+
 
     var swiper = new Swiper('.swiper-container', {
         effect: 'fade',
