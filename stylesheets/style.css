@@ -209,7 +209,7 @@ nav.menu-overlay.open {
 }
 
 nav.menu-overlay > .nav-item:first-child {
-  padding: 15%;
+  padding: 10%;
 }
 
 nav.menu-overlay a {
@@ -409,19 +409,64 @@ nav.menu-overlay .nav-item a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  nav a {
+  nav.menu-overlay a.logo {
+    font-family: "Caveat Brush";
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-align: left;
+    width: unset;
+    padding: 0;
+    height: unset;
     color: white;
+    background-color: transparent;
+  }
+  nav.menu-overlay > .nav-item:first-child {
+    padding: 0;
+  }
+  nav.menu-overlay .nav-item {
+    width: unset;
+  }
+  nav.menu-overlay .multi-level {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow-y: unset;
+    background-color: transparent;
+  }
+  nav.menu-overlay .multi-level .nav-item {
+    width: 100%;
+  }
+  nav.menu-overlay .multi-level .nav-item:hover > ul {
+    display: block;
+  }
+  nav.menu-overlay .multi-level .nav-item ul {
+    display: none;
+  }
+  nav.menu-overlay .multi-level .nav-item ul li a {
+    padding: 1em;
+  }
+  nav.menu-overlay .multi-level .nav-item input:checked ~ ul {
+    display: block;
+  }
+  nav.menu-overlay .multi-level .nav-item input:checked ~ label {
+    background: #ff9a5b;
   }
 }
 

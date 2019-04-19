@@ -205,7 +205,7 @@ nav {
         }
 
         >.nav-item:first-child {
-            padding: 15%;
+            padding: 10%;
         }
 
         a {
@@ -232,7 +232,6 @@ nav {
             }
 
             overflow-y: scroll;
-            // overflow-x: hidden;
             width: 100%;
             background-color: $black;
         }
@@ -427,15 +426,73 @@ nav {
             height: unset;
             background: transparent;
             display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            justify-content: space-evenly;
+            align-items: center;
             flex-direction: row;
-        }
 
-        a {
-            color: white;
-        }
+            a {
 
+                &.logo {
+                    font-family: $fontTitle;
+                    font-size: 1.5rem;
+                    white-space: nowrap;
+                    text-align: left;
+                    width: unset;
+                    padding: 0;
+                    height: unset;
+                    color: $white;
+                    background-color: transparent;
+                }
+            }
+
+            >.nav-item:first-child {
+                padding: 0;
+            }
+
+            .nav-item {
+                width: unset
+            }
+
+            .multi-level {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                overflow-y: unset;
+                background-color: transparent;
+
+                .nav-item {
+                    width: 100%;
+
+                    &:hover {
+                        >ul {
+                            display: block;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                        li {
+                            a {
+                                padding: 1em;
+                            }
+                        }
+                    }
+
+                    input:checked {
+                        ~ul {
+                            display: block;
+                        }
+
+                        ~label {
+                            background: $orange;
+                        }
+                    }
+
+                    label {}
+                }
+
+            }
+        }
     }
 }
 
