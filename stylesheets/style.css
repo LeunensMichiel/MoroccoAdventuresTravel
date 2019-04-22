@@ -12,11 +12,26 @@ body {
   height: 100%;
   width: 100%;
   margin: 0px auto;
-  overflow: hidden;
 }
 
 .wrapper.closed {
   display: none;
+}
+
+.primaryBtn {
+  background: transparent;
+  color: white;
+  padding: .66em 1.66em;
+  border: 2px solid white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.primaryBtn:focus, .primaryBtn:hover {
+  background: white;
+  color: #4a5154;
 }
 
 .hamburger {
@@ -360,7 +375,7 @@ nav.menu-overlay .nav-item a {
 }
 
 .landing-container .landing-subtitle {
-  margin: 0px 1em;
+  margin-bottom: 25px;
 }
 
 .landing-container p {

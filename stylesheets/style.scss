@@ -27,10 +27,24 @@ body {
     width: 100%;
 
     margin: 0px auto;
-    overflow: hidden;
 
     &.closed {
         display: none;
+    }
+}
+
+.primaryBtn {
+    background: transparent;
+    color: $white;
+    padding: .66em 1.66em;
+    border: 2px solid $white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: .3s ease-out;
+
+    &:focus, &:hover {
+        background: $white;
+        color: $black;
     }
 }
 
@@ -346,7 +360,7 @@ nav {
     }
 
     .landing-subtitle {
-        margin: 0px 1em;
+        margin-bottom: 25px;
     }
 
     p {
