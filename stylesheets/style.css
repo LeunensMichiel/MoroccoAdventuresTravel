@@ -209,7 +209,7 @@ nav.menu-overlay.open {
 }
 
 nav.menu-overlay > .nav-item:first-child {
-  padding: 10%;
+  padding: 70px 5% 5% 5%;
 }
 
 nav.menu-overlay a {
@@ -260,10 +260,6 @@ nav.menu-overlay .nav-item:hover {
   cursor: pointer;
 }
 
-nav.menu-overlay .nav-item:hover > ul {
-  display: block;
-}
-
 nav.menu-overlay .nav-item ul {
   display: none;
   margin: 0;
@@ -289,7 +285,9 @@ nav.menu-overlay .nav-item input:checked ~ ul {
 }
 
 nav.menu-overlay .nav-item input:checked ~ label {
-  background: #ff9a5b;
+  background-color: #ff9a5b;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 nav.menu-overlay .nav-item label {
@@ -308,12 +306,6 @@ nav.menu-overlay .nav-item label {
   font-size: 1.2rem;
   -webkit-transition: none;
   transition: none;
-}
-
-nav.menu-overlay .nav-item label:hover {
-  background-color: #ff9a5b;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 nav.menu-overlay .nav-item a {
@@ -477,12 +469,14 @@ nav.menu-overlay .nav-item a {
     display: block;
     position: absolute;
   }
-  nav.menu-overlay .multi-level .nav-item input:checked ~ label {
-    background: #ff9a5b;
-  }
   nav.menu-overlay .multi-level .nav-item label {
     font-size: 1rem;
     text-transform: uppercase;
+  }
+  nav.menu-overlay .multi-level .nav-item label:hover {
+    background-color: #ff9a5b;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
 }
 

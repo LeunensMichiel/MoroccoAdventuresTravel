@@ -205,7 +205,7 @@ nav {
         }
 
         >.nav-item:first-child {
-            padding: 10%;
+            padding: 70px 5% 5% 5%;
         }
 
         a {
@@ -253,10 +253,6 @@ nav {
 
             &:hover {
                 cursor: pointer;
-
-                >ul {
-                    display: block;
-                }
             }
 
             ul {
@@ -281,14 +277,16 @@ nav {
             }
 
             input:checked {
-                ~ul {
+                ~ ul {
                     display: block;
                 }
 
                 ~label {
-                    background: $orange;
+                    background-color: $orange;
+                    transition: .3s;
                 }
             }
+
 
             label {
                 max-width: 100%;
@@ -299,11 +297,6 @@ nav {
                 padding: 1em;
                 font-size: 1.2rem;
                 transition: none;
-
-                &:hover {
-                    background-color: $orange;
-                    transition: .3s;
-                }
             }
 
             a {
@@ -494,15 +487,15 @@ nav {
                             display: block;
                             position: absolute;
                         }
-
-                        ~label {
-                            background: $orange;
-                        }
                     }
 
                     label {
                         font-size: 1rem;
                         text-transform: uppercase;
+                        &:hover {
+                            background-color: $orange;
+                            transition: .3s;
+                        }
                     }
                 }
 
