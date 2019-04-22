@@ -400,18 +400,20 @@ nav.menu-overlay .nav-item a {
   .hamburger {
     display: none;
   }
+  nav {
+    padding: 1em;
+  }
   nav.menu-overlay {
     position: fixed;
     z-index: 999;
-    width: 100%;
     height: unset;
     background: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -432,41 +434,55 @@ nav.menu-overlay .nav-item a {
     background-color: transparent;
   }
   nav.menu-overlay > .nav-item:first-child {
-    padding: 0;
+    padding: 0 1em;
   }
   nav.menu-overlay .nav-item {
     width: unset;
   }
   nav.menu-overlay .multi-level {
+    width: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     overflow-y: unset;
-    background-color: transparent;
+    background: transparent;
   }
   nav.menu-overlay .multi-level .nav-item {
-    width: 100%;
+    position: relative;
+    min-width: 200px;
   }
   nav.menu-overlay .multi-level .nav-item:hover > ul {
     display: block;
   }
   nav.menu-overlay .multi-level .nav-item ul {
     display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #4a5154;
+  }
+  nav.menu-overlay .multi-level .nav-item ul ul {
+    top: 0;
+    left: 100%;
   }
   nav.menu-overlay .multi-level .nav-item ul li a {
     padding: 1em;
   }
   nav.menu-overlay .multi-level .nav-item input:checked ~ ul {
     display: block;
+    position: absolute;
   }
   nav.menu-overlay .multi-level .nav-item input:checked ~ label {
     background: #ff9a5b;
+  }
+  nav.menu-overlay .multi-level .nav-item label {
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 }
 

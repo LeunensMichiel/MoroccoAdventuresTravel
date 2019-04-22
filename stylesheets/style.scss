@@ -419,14 +419,14 @@ nav {
     }
 
     nav {
+        padding: 1em;
         &.menu-overlay {
             position: fixed;
             z-index: 999;
-            width: 100%;
             height: unset;
             background: transparent;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             flex-direction: row;
 
@@ -446,7 +446,7 @@ nav {
             }
 
             >.nav-item:first-child {
-                padding: 0;
+                padding: 0 1em;
             }
 
             .nav-item {
@@ -454,14 +454,16 @@ nav {
             }
 
             .multi-level {
+                width: unset;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: flex-start;
                 align-items: flex-start;
                 overflow-y: unset;
-                background-color: transparent;
+                background: transparent;
 
                 .nav-item {
-                    width: 100%;
+                    position: relative;
+                    min-width: 200px;
 
                     &:hover {
                         >ul {
@@ -471,6 +473,15 @@ nav {
 
                     ul {
                         display: none;
+                        position: absolute;
+                        width: 100%;
+                        background-color: $black;
+
+                        ul {
+                            top: 0;
+                            left: 100%;
+                        }
+
                         li {
                             a {
                                 padding: 1em;
@@ -481,6 +492,7 @@ nav {
                     input:checked {
                         ~ul {
                             display: block;
+                            position: absolute;
                         }
 
                         ~label {
@@ -488,7 +500,10 @@ nav {
                         }
                     }
 
-                    label {}
+                    label {
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
                 }
 
             }
