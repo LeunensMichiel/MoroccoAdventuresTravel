@@ -42,11 +42,69 @@ body {
     letter-spacing: 1px;
     transition: .3s ease-out;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
         background: $white;
         color: $black;
     }
 }
+
+//Pages
+.header-container {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.425);
+
+    &:after {
+        content: "";
+        position: absolute;
+        background: $black url(../assets/images/highAtlas.JPG) no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .header {
+        color: $white;
+        width: 80%;
+        text-align: center;
+
+        h2 {
+            box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.33);
+        }
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    aside {
+        display: block;
+        height: 100%;
+
+        .aside-image {
+            width: 100%;
+            height: 400px;
+            background: $black url(../assets/images/highAtlas2.jpg) no-repeat;
+            background-size: cover;
+        }
+    }
+
+    article {
+        display: block;
+        width: 100;
+    }
+}
+
+
 
 // NAVIGATION
 // ANIMATION BY Aaron Iker
@@ -108,7 +166,7 @@ body {
                         width: 47%;
                         height: 2px;
                         border-radius: 1px;
-                        background: #ffffff;
+                        background: $white;
                         position: absolute;
                         backface-visibility: hidden;
                         transition: transform .5s ease, border-radius .3s ease;
@@ -131,7 +189,7 @@ body {
             svg {
                 display: block;
                 fill: none;
-                stroke: #ffffff;
+                stroke: $white;
                 stroke-width: 2px;
                 width: 44px;
                 height: 44px;
@@ -161,7 +219,7 @@ body {
 
                     &:before,
                     &:after {
-                        background: #000000;
+                        background: $black;
                     }
 
                     &:first-child {
@@ -187,7 +245,7 @@ body {
             }
 
             svg {
-                stroke: #000000;
+                stroke: $black;
                 stroke-dashoffset: 62;
                 stroke-dasharray: 0 82.801 62 82.801;
                 transform: rotate(90deg);
@@ -206,7 +264,7 @@ nav {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: #ffffff;
+        background-color: $white;
         height: 100%;
         width: 100%;
         z-index: 50;
@@ -290,7 +348,7 @@ nav {
             }
 
             input:checked {
-                ~ ul {
+                ~ul {
                     display: block;
                 }
 
@@ -373,7 +431,6 @@ nav {
     }
 }
 
-
 // MEDIA QUERIES
 
 /* mobile-small */
@@ -426,6 +483,7 @@ nav {
 
     nav {
         padding: 1em;
+
         &.menu-overlay {
             position: fixed;
             z-index: 999;
@@ -505,6 +563,7 @@ nav {
                     label {
                         font-size: 1rem;
                         text-transform: uppercase;
+
                         &:hover {
                             background-color: $orange;
                             transition: .3s;
