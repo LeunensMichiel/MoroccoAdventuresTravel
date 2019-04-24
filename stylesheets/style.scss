@@ -13,12 +13,18 @@ $black: rgba(40, 40, 40, 1);
 
 
 // GENERAL
+.html {
+    height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: $fontMain, sans-serif;
     height: 100%;
-    height: 100vh;
-    width: 100%;
     height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
     position: relative;
     background-color: $white;
 }
@@ -87,8 +93,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: stretch;    
-    
+    align-items: stretch;
+
     aside {
         display: block;
         background-color: $white;
@@ -127,6 +133,7 @@ section {
                             color: $orange;
                         }
                     }
+
                     font-size: 1.2em;
                     font-weight: 300;
                 }
@@ -168,7 +175,8 @@ section {
             .article-item:nth-child(even) {
                 background-color: $black;
                 color: $white;
-                box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.3);
+                box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
+
                 h3 {
                     color: $yellow;
                 }
