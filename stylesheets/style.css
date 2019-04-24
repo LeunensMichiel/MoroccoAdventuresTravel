@@ -15,6 +15,10 @@ body {
   background-color: #f7f5f4;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
@@ -23,6 +27,81 @@ body {
 
 .wrapper.closed {
   display: none;
+}
+
+footer {
+  background: #282828;
+  color: #f7f5f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  font-size: .9rem;
+  width: 100%;
+  text-align: center;
+  padding: 5em 0;
+  -webkit-box-shadow: inset 0px 0px 129px -29px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 129px -29px rgba(0, 0, 0, 0.75);
+}
+
+footer .footer-item {
+  width: 80%;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin-top: 2em;
+}
+
+footer .footer-container .social-icons {
+  width: 33%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .social-icons i {
+  font-size: 1.5rem;
+}
+
+footer .footer-container a {
+  color: #f7f5f4;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+footer .footer-container a:hover, footer .footer-container a:focus {
+  color: #f3c034;
 }
 
 .primaryBtn {
@@ -595,6 +674,34 @@ nav.menu-overlay .nav-item a {
 /* desktop-medium */
 /* desktop-large */
 @media all and (min-width: 1281px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 25vh;
+    padding: 0;
+  }
+  footer .footer-item {
+    width: 100%;
+  }
+  footer .footer-container {
+    width: 100%;
+    margin-top: 0;
+  }
+  footer .footer-container .social-icons {
+    width: 200px;
+    margin-top: 15px;
+  }
+  footer .footer-container .social-icons i {
+    font-size: 1.8rem;
+  }
   .hamburger {
     display: none;
   }
