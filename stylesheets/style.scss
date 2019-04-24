@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 
     margin: 0px auto;
@@ -86,7 +86,9 @@ body {
 section {
     display: flex;
     flex-direction: column;
-
+    justify-content: flex-start;
+    align-items: stretch;    
+    
     aside {
         display: block;
         background-color: $white;
@@ -125,7 +127,6 @@ section {
                             color: $orange;
                         }
                     }
-
                     font-size: 1.2em;
                     font-weight: 300;
                 }
@@ -133,6 +134,12 @@ section {
                 .overview-subitem {
                     font-size: .9rem;
                     margin-left: 2.7em;
+
+                    &.difficulty {
+                        .colored {
+                            color: $yellow;
+                        }
+                    }
                 }
             }
         }
@@ -162,8 +169,6 @@ section {
                 background-color: $black;
                 color: $white;
                 box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.3);
-
-
                 h3 {
                     color: $yellow;
                 }
