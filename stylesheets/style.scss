@@ -5,11 +5,11 @@ $fontMain: Roboto;
 $fontTitle: 'Caveat Brush';
 
 // Colors
-$black: rgba(74, 81, 84, 1);
-$orange: rgba(255, 154, 91, 1);
-$white: rgba(255, 255, 255, 1);
-$cyan: rgba(30, 152, 168, 1);
-$brown: rgba(81, 68, 55, 1);
+$orange: rgba(255, 122, 40, 1);
+$light: rgba(255, 238, 229, 1);
+$white: rgba(247, 245, 244, 1);
+$yellow: rgb(243, 192, 52);
+$black: rgba(40, 40, 40, 1);
 
 
 // GENERAL
@@ -20,6 +20,7 @@ body {
     width: 100%;
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
+    background-color: $white;
 }
 
 .wrapper {
@@ -88,11 +89,57 @@ section {
 
     aside {
         display: block;
-        height: 100%;
+        background-color: $white;
+
+        .aside-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2em 0;
+
+            h2 {
+                color: $orange;
+                font-family: $fontTitle;
+                text-transform: uppercase;
+                font-size: 1.7rem;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            .overview {
+                padding: .66em 0;
+                color: $black;
+                width: 80%;
+
+                .overview-item {
+                    i {
+                        color: $black;
+                        margin-right: 1em;
+                        font-size: 1em;
+                        transition: .5s;
+
+                        &:hover,
+                        &:focus {
+                            color: $orange;
+                        }
+                    }
+
+                    font-size: 1.2em;
+                    font-weight: 300;
+                }
+
+                .overview-subitem {
+                    font-size: .9rem;
+                    margin-left: 2.7em;
+                }
+            }
+        }
 
         .aside-image {
             width: 100%;
-            height: 400px;
+            height: 300px;
             background: $black url(../assets/images/highAtlas2.jpg) no-repeat;
             background-size: cover;
         }
@@ -100,7 +147,46 @@ section {
 
     article {
         display: block;
-        width: 100;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .article-container {
+            width: 100%;
+            background-color: $white;
+            color: $black;
+
+            .article-item:nth-child(even) {
+                background-color: $black;
+                color: $white;
+                box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.3);
+
+
+                h3 {
+                    color: $yellow;
+                }
+            }
+
+            .article-item {
+                width: 100%;
+                padding: 2em 0;
+
+                h3,
+                p {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: block;
+                    padding: .5em 0;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+            }
+        }
     }
 }
 

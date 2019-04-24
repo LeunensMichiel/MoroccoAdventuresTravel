@@ -6,6 +6,7 @@ body {
   width: 100%;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
+  background-color: #f7f5f4;
 }
 
 .wrapper {
@@ -20,9 +21,9 @@ body {
 
 .primaryBtn {
   background: transparent;
-  color: white;
+  color: #f7f5f4;
   padding: .66em 1.66em;
-  border: 2px solid white;
+  border: 2px solid #f7f5f4;
   font-weight: 500;
   letter-spacing: 1px;
   -webkit-transition: .3s ease-out;
@@ -30,8 +31,8 @@ body {
 }
 
 .primaryBtn:focus, .primaryBtn:hover {
-  background: white;
-  color: #4a5154;
+  background: #f7f5f4;
+  color: #282828;
 }
 
 .header-container {
@@ -53,7 +54,7 @@ body {
 .header-container:after {
   content: "";
   position: absolute;
-  background: #4a5154 url(../assets/images/highAtlas.JPG) no-repeat;
+  background: #282828 url(../assets/images/highAtlas.JPG) no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -63,7 +64,7 @@ body {
 }
 
 .header-container .header {
-  color: white;
+  color: #f7f5f4;
   width: 80%;
   text-align: center;
 }
@@ -85,19 +86,121 @@ section {
 
 section aside {
   display: block;
-  height: 100%;
+  background-color: #f7f5f4;
+}
+
+section aside .aside-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 0;
+}
+
+section aside .aside-container h2 {
+  color: #ff7a28;
+  font-family: "Caveat Brush";
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+section aside .aside-container .overview {
+  padding: .66em 0;
+  color: #282828;
+  width: 80%;
+}
+
+section aside .aside-container .overview .overview-item {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+section aside .aside-container .overview .overview-item i {
+  color: #282828;
+  margin-right: 1em;
+  font-size: 1em;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section aside .aside-container .overview .overview-item i:hover, section aside .aside-container .overview .overview-item i:focus {
+  color: #ff7a28;
+}
+
+section aside .aside-container .overview .overview-subitem {
+  font-size: .9rem;
+  margin-left: 2.7em;
 }
 
 section aside .aside-image {
   width: 100%;
-  height: 400px;
-  background: #4a5154 url(../assets/images/highAtlas2.jpg) no-repeat;
+  height: 300px;
+  background: #282828 url(../assets/images/highAtlas2.jpg) no-repeat;
   background-size: cover;
 }
 
 section article {
   display: block;
-  width: 100;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section article .article-container {
+  width: 100%;
+  background-color: #f7f5f4;
+  color: #282828;
+}
+
+section article .article-container .article-item:nth-child(even) {
+  background-color: #282828;
+  color: #f7f5f4;
+  -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+section article .article-container .article-item:nth-child(even) h3 {
+  color: #f3c034;
+}
+
+section article .article-container .article-item {
+  width: 100%;
+  padding: 2em 0;
+}
+
+section article .article-container .article-item h3,
+section article .article-container .article-item p {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding: .5em 0;
+}
+
+section article .article-container .article-item p {
+  text-align: justify;
 }
 
 .hamburger {
@@ -163,7 +266,7 @@ section article {
   width: 47%;
   height: 2px;
   border-radius: 1px;
-  background: white;
+  background: #f7f5f4;
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -192,7 +295,7 @@ section article {
 .toggle input + div svg {
   display: block;
   fill: none;
-  stroke: white;
+  stroke: #f7f5f4;
   stroke-width: 2px;
   width: 44px;
   height: 44px;
@@ -225,7 +328,7 @@ section article {
 }
 
 .toggle input:checked + div div span:before, .toggle input:checked + div div span:after {
-  background: #4a5154;
+  background: #282828;
 }
 
 .toggle input:checked + div div span:first-child:before {
@@ -249,7 +352,7 @@ section article {
 }
 
 .toggle input:checked + div svg {
-  stroke: #4a5154;
+  stroke: #282828;
   stroke-dashoffset: 62;
   stroke-dasharray: 0 82.801 62 82.801;
   -webkit-transform: rotate(90deg);
@@ -273,7 +376,7 @@ nav.menu-overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: #f7f5f4;
   height: 100%;
   width: 100%;
   z-index: 50;
@@ -294,11 +397,11 @@ nav.menu-overlay > .nav-item:first-child {
 
 nav.menu-overlay a {
   text-decoration: none;
-  color: white;
+  color: #f7f5f4;
 }
 
 nav.menu-overlay a.logo {
-  color: #4a5154;
+  color: #282828;
   font-family: "Caveat Brush";
   font-size: 2rem;
   white-space: nowrap;
@@ -307,13 +410,13 @@ nav.menu-overlay a.logo {
   padding: 0;
   height: 100%;
   display: inline-block;
-  background-color: white;
+  background-color: #f7f5f4;
 }
 
 nav.menu-overlay .multi-level {
   overflow-y: scroll;
   width: 100%;
-  background-color: #4a5154;
+  background-color: #282828;
 }
 
 nav.menu-overlay .multi-level input[type="checkbox"] {
@@ -325,7 +428,7 @@ nav.menu-overlay .nav-item {
 }
 
 nav.menu-overlay .nav-item i {
-  color: white;
+  color: #f7f5f4;
 }
 
 nav.menu-overlay .nav-item ul,
@@ -333,7 +436,7 @@ nav.menu-overlay .nav-item li,
 nav.menu-overlay .nav-item label {
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: #f7f5f4;
 }
 
 nav.menu-overlay .nav-item:hover {
@@ -357,7 +460,7 @@ nav.menu-overlay .nav-item ul li a {
 }
 
 nav.menu-overlay .nav-item ul li a:hover {
-  color: #ff9a5b;
+  color: #ff7a28;
 }
 
 nav.menu-overlay .nav-item input:checked ~ ul {
@@ -365,7 +468,7 @@ nav.menu-overlay .nav-item input:checked ~ ul {
 }
 
 nav.menu-overlay .nav-item input:checked ~ label {
-  background-color: #ff9a5b;
+  background-color: #ff7a28;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -502,7 +605,7 @@ nav.menu-overlay .nav-item a {
     width: unset;
     padding: 0;
     height: unset;
-    color: white;
+    color: #f7f5f4;
     background-color: transparent;
   }
   nav.menu-overlay > .nav-item:first-child {
@@ -536,7 +639,7 @@ nav.menu-overlay .nav-item a {
     display: none;
     position: absolute;
     width: 100%;
-    background-color: #4a5154;
+    background-color: #282828;
   }
   nav.menu-overlay .multi-level .nav-item ul ul {
     top: 0;
@@ -554,7 +657,7 @@ nav.menu-overlay .nav-item a {
     text-transform: uppercase;
   }
   nav.menu-overlay .multi-level .nav-item label:hover {
-    background-color: #ff9a5b;
+    background-color: #ff7a28;
     -webkit-transition: .3s;
     transition: .3s;
   }
