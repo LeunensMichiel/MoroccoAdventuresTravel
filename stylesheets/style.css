@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto:300,400,900");
 .html {
   height: 100%;
-  height: calc(var(--vh, 1vh) * 100);
   overflow-x: hidden;
   width: 100%;
 }

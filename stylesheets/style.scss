@@ -15,7 +15,6 @@ $black: rgba(40, 40, 40, 1);
 // GENERAL
 .html {
     height: 100%;
-    height: calc(var(--vh, 1vh) * 100);
     overflow-x: hidden;
     width: 100%;
 }
