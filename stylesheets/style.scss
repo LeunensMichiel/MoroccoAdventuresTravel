@@ -23,6 +23,7 @@ body {
     font-family: $fontMain, sans-serif;
     height: 100%;
     height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     position: relative;
     background-color: $white;
