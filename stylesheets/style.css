@@ -598,10 +598,8 @@ nav.menu-overlay .nav-item a {
   .hamburger {
     display: none;
   }
-  nav {
-    padding: 1em;
-  }
   nav.menu-overlay {
+    padding: 1em 0;
     position: fixed;
     z-index: 999;
     height: unset;
@@ -619,6 +617,12 @@ nav.menu-overlay .nav-item a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  nav.menu-overlay.solid {
+    background: #282828;
+    padding: 0;
   }
   nav.menu-overlay a.logo {
     font-family: "Caveat Brush";

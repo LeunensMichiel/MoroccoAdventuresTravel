@@ -17,6 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    window.addEventListener('scroll', function (e) {
+        if (window.scrollY > 100) {
+            document.querySelector('.menu-overlay').classList.add('solid');
+        } else {
+            document.querySelector('.menu-overlay').classList.remove('solid');
+        }
+    });
+
+
     if (document.querySelector('.swiper-container')) {
         const swiper = new Swiper('.swiper-container', {
             effect: 'fade',
@@ -45,6 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
             round: true,
             vertical: true,
             horizontal: false
-          });
-    }    
+        });
+    }
 });

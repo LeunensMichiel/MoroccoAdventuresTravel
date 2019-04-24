@@ -590,9 +590,8 @@ nav {
     }
 
     nav {
-        padding: 1em;
-
         &.menu-overlay {
+            padding: 1em 0;
             position: fixed;
             z-index: 999;
             height: unset;
@@ -601,6 +600,12 @@ nav {
             justify-content: center;
             align-items: center;
             flex-direction: row;
+            transition: .3s ease;
+
+            &.solid {
+                background: $black;
+                padding: 0;
+            }
 
             a {
 
