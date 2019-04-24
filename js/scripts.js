@@ -36,6 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         });
     }
-
-
+    if (document.querySelector('.rellax')) {
+        var rellax = new Rellax('.rellax', {
+            speed: -1,
+            center: false,
+            wrapper: '.parallax',
+            relativeToWrapper: true,
+            round: true,
+            vertical: true,
+            horizontal: false
+          });
+    }    
 });
