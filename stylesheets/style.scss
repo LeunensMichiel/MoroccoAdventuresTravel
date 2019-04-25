@@ -56,7 +56,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 5em 0;
-    box-shadow: inset 0px 0px 129px -29px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 129px -29px rgba(0, 0, 0, 0.75);
 
 
     .footer-item {
@@ -218,21 +218,16 @@ section {
                 height: 100vh;
             }
 
-            // background: $black url(../assets/images/highAtlas2.jpg) no-repeat;
-            // background-size: cover;
         }
     }
 
     article {
-        display: block;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
         .article-container {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background-color: $white;
             color: $black;
 
@@ -665,6 +660,88 @@ nav {
             }
         }
     }
+
+    section {
+
+        aside {
+            padding: 5em 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: row;
+            height: 50vh;
+            position: relative;
+
+            .aside-container {
+                background: $light;
+                padding: 1em 0;
+                height: 80%;
+                position: absolute;
+                top: 25%;
+                left: 20%;
+                width: 33%;
+                z-index: 444;
+
+
+                h2 {
+                    margin-bottom: 1em;
+                }
+
+                .overview {
+                    width: 50%;
+
+                    &.difficulty {
+                        .colored {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            .aside-image {
+                width: 50%;
+                height: 100%;
+                margin-right: 20%;
+
+            }
+        }
+
+        article {
+            margin-top: 100px;
+
+            .article-container {
+
+                .article-item:nth-child(even) {
+                    background-color: $black;
+                    color: $white;
+                    box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
+
+                    h3 {
+                        color: $yellow;
+                    }
+                }
+
+                .article-item {
+                    width: 100%;
+                    padding: 2em 0;
+
+                    h3,
+                    p {
+                        width: 66%;
+                        margin: 0 auto;
+                        display: block;
+                        padding: 1em 0;
+                    }
+
+                    p {
+                        text-align: justify;
+                    }
+
+                }
+            }
+        }
+    }
+
 
     .hamburger {
         display: none;
