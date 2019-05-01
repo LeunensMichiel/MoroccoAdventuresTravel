@@ -7,7 +7,7 @@ $fontTitle: 'Caveat Brush';
 // Colors
 $orange: rgba(255, 122, 40, 1);
 $light: rgba(255, 238, 229, 1);
-$white: rgba(247, 245, 244, 1);
+$white: rgb(248, 248, 248);
 $yellow: rgb(243, 192, 52);
 $black: rgba(40, 40, 40, 1);
 
@@ -173,6 +173,13 @@ footer {
     }
 }
 
+.header-container.bougmaze {
+    &:after {
+        background: $black url(../assets/images/DSC_0102.JPG) no-repeat;
+        background-size: cover;
+    }
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -251,6 +258,31 @@ section {
     }
 
     article {
+
+        &.intro {
+            padding: 0 1rem;
+            background: $white;
+
+            >p {
+                font-size: 1rem;
+                text-align: justify;
+                padding: 0;
+
+                &:first-of-type {
+                    font-size: 1.3rem;
+                    font-style: italic;
+
+                    &::first-letter {
+                        font-size: 200%;
+                        font-style: normal;
+                        color: $orange;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+
         .article-container {
             width: 100%;
             display: flex;
@@ -272,7 +304,7 @@ section {
 
             .article-item {
                 width: 100%;
-                padding: 2em 0;
+                padding: 5rem 0;
 
                 h3,
                 p {
@@ -284,6 +316,10 @@ section {
 
                 p {
                     text-align: justify;
+                }
+
+                h3 {
+                    font-size: 1.8rem;
                 }
 
             }
@@ -755,6 +791,7 @@ nav {
             height: 50vh;
             position: relative;
 
+
             .aside-container {
                 background: $light;
                 padding: 1em 0;
@@ -764,7 +801,6 @@ nav {
                 left: 20%;
                 width: 33%;
                 z-index: 444;
-
 
                 h2 {
                     margin-bottom: 1em;
@@ -792,6 +828,22 @@ nav {
         article {
             margin-top: 100px;
 
+            &.intro {
+                padding: 10rem 0;
+                margin-left: auto;
+                margin-right: auto;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                >p {
+                    width: 50%;
+                    margin: .66rem 0;
+                }
+            }
+
             .article-container {
 
                 .article-item:nth-child(even) {
@@ -806,11 +858,10 @@ nav {
 
                 .article-item {
                     width: 100%;
-                    padding: 2em 0;
 
                     h3,
                     p {
-                        width: 66%;
+                        width: 50%;
                         margin: 0 auto;
                         display: block;
                         padding: 1em 0;
