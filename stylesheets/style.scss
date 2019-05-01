@@ -152,14 +152,23 @@ footer {
         margin: 0;
         margin-top: 5px;
         color: $white;
+        text-align: center;
         font-size: .5em;
         text-transform: uppercase;
+        width: 80%;
     }
 }
 
 .header-container.daytrips {
     &:after {
         background: $black url(../assets/images/daytripsMarrakech.JPG) no-repeat;
+        background-size: cover;
+    }
+}
+
+.header-container.daytrips2 {
+    &:after {
+        background: $black url(../assets/images/DSC_0028.JPG) no-repeat;
         background-size: cover;
     }
 }
@@ -298,6 +307,7 @@ main {
                 &::first-letter {
                     font-size: 200%;
                     color: $orange;
+                    font-weight: 600;
                 }
             }
         }
@@ -823,7 +833,7 @@ nav {
         padding: 5rem;
 
         p {
-            padding: .5rem;
+            padding: .5rem 0;
             margin: 0;
             width: 90%;
         }

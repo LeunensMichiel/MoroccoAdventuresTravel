@@ -170,12 +170,19 @@ footer .footer-container a:hover, footer .footer-container a:focus {
   margin: 0;
   margin-top: 5px;
   color: #f7f5f4;
+  text-align: center;
   font-size: .5em;
   text-transform: uppercase;
+  width: 80%;
 }
 
 .header-container.daytrips:after {
   background: #282828 url(../assets/images/daytripsMarrakech.JPG) no-repeat;
+  background-size: cover;
+}
+
+.header-container.daytrips2:after {
+  background: #282828 url(../assets/images/DSC_0028.JPG) no-repeat;
   background-size: cover;
 }
 
@@ -336,6 +343,7 @@ main .main-container:last-of-type {
 main .main-container:first-of-type p:first-of-type::first-letter {
   font-size: 200%;
   color: #ff7a28;
+  font-weight: 600;
 }
 
 main h2 {
@@ -851,7 +859,7 @@ nav.menu-overlay .nav-item a {
     padding: 5rem;
   }
   main p {
-    padding: .5rem;
+    padding: .5rem 0;
     margin: 0;
     width: 90%;
   }
