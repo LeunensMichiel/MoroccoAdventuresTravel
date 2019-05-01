@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // // Mobile True Viewport Height
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    const vh = window.innerHeight * 0.01;
+    document.body.style.setProperty('--vh', `${vh}px`);
 
     if (document.querySelector('#togglemenu')) {
         document.querySelector('#togglemenu').checked = false;
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     if (document.querySelector('.rellax')) {
-        var rellax = new Rellax('.rellax', {
+        const rellax = new Rellax('.rellax', {
             speed: -1,
             center: false,
             wrapper: '.parallax',
