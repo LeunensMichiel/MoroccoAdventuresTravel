@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector('.rellax')) {
         const rellax = new Rellax('.rellax', {
             speed: -1,
-            center: false,
+            center: true,
             wrapper: '.parallax',
             relativeToWrapper: true,
             round: true,

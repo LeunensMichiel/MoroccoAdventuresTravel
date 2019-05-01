@@ -330,6 +330,7 @@ section article .article-container .article-item p {
 main {
   color: #282828;
   background: #f7f5f4;
+  padding-bottom: 3rem;
 }
 
 main .main-container {
