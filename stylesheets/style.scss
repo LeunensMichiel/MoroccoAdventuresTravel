@@ -287,7 +287,20 @@ main {
     background: $white;
 
     .main-container {
-        padding: 1rem 1.5rem;
+        padding: 1.5rem;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+
+        &:first-of-type {
+            p:first-of-type {
+                &::first-letter {
+                    font-size: 200%;
+                    color: $orange;
+                }
+            }
+        }
     }
 
     h2 {
@@ -299,12 +312,6 @@ main {
     p {
         text-align: justify;
 
-        &:first-of-type {
-            &::first-letter {
-                font-size: 200%;
-                color: $orange;
-            }
-        }
     }
 
     .block-image {
@@ -800,6 +807,34 @@ nav {
         }
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        padding: 5rem;
+
+        p {
+            padding: .5rem;
+            margin: 0;
+            width: 90%;
+        }
+
+        .main-container {
+            width: 50%;
+            padding: 0;
+        }
+
+        .block-image {
+            position: absolute;
+            width: 45%;
+            height: 500px;
+            top: 3rem;
+            bottom: 2rem;
+            right: 5rem;
+        }
+    }
 
     .hamburger {
         display: none;
@@ -906,4 +941,8 @@ nav {
 }
 
 /* desktop-xlarge */
-@media all and (min-width: 1601px) {}
+@media all and (min-width: 1601px) {
+    main {
+        margin: 3rem 0;
+    }
+}

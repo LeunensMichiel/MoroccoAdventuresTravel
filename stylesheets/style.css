@@ -326,7 +326,16 @@ main {
 }
 
 main .main-container {
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
+}
+
+main .main-container:last-of-type {
+  padding-bottom: 0;
+}
+
+main .main-container:first-of-type p:first-of-type::first-letter {
+  font-size: 200%;
+  color: #ff7a28;
 }
 
 main h2 {
@@ -337,11 +346,6 @@ main h2 {
 
 main p {
   text-align: justify;
-}
-
-main p:first-of-type::first-letter {
-  font-size: 200%;
-  color: #ff7a28;
 }
 
 main .block-image {
@@ -823,6 +827,39 @@ nav.menu-overlay .nav-item a {
   section article .article-container .article-item p {
     text-align: justify;
   }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    padding: 5rem;
+  }
+  main p {
+    padding: .5rem;
+    margin: 0;
+    width: 90%;
+  }
+  main .main-container {
+    width: 50%;
+    padding: 0;
+  }
+  main .block-image {
+    position: absolute;
+    width: 45%;
+    height: 500px;
+    top: 3rem;
+    bottom: 2rem;
+    right: 5rem;
+  }
   .hamburger {
     display: none;
   }
@@ -919,4 +956,9 @@ nav.menu-overlay .nav-item a {
 }
 
 /* desktop-xlarge */
+@media all and (min-width: 1601px) {
+  main {
+    margin: 3rem 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
