@@ -489,6 +489,7 @@ section.about .container > p:last-of-type {
      object-fit: cover;
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 .card .card-header .card-subheader {
@@ -566,6 +567,7 @@ main .block-image img {
      object-fit: cover;
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 .hamburger {
