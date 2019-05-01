@@ -204,6 +204,12 @@ footer .footer-container a:hover, footer .footer-container a:focus {
   background-position: center;
 }
 
+.header-container.middleAtlas:after {
+  background: #282828 url(../assets/images/DSC_0786.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
