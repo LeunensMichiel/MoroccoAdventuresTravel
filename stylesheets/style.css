@@ -204,12 +204,6 @@ footer .footer-container a:hover, footer .footer-container a:focus {
   background-position: center;
 }
 
-.header-container.middleAtlas:after {
-  background: #282828 url(../assets/images/DSC_0786.JPG) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,7 +246,6 @@ section aside .aside-container {
 section aside .aside-container h2 {
   color: #ff7a28;
   font-family: "Caveat Brush";
-  text-transform: uppercase;
   font-size: 1.7rem;
   margin: 0;
   margin-bottom: 10px;
@@ -448,8 +441,8 @@ section.about .container > p:last-of-type {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 1rem 0;
   width: 100%;
 }
