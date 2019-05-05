@@ -11,10 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('.menu-overlay').classList.toggle('open');
             document.querySelector('.wrapper').classList.toggle('closed');
         });
-
-        document.querySelector('.nav-item').addEventListener('click', () => {
-            document.querySelector('#togglemenu').checked = false;
-        });
     }
 
     window.addEventListener('scroll', function (e) {

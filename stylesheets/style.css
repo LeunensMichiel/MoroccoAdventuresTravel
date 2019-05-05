@@ -785,6 +785,7 @@ nav.menu-overlay .multi-level input[type="checkbox"] {
 }
 
 nav.menu-overlay .nav-item {
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -856,6 +857,7 @@ nav.menu-overlay .nav-item a {
   display: inline-block;
   list-style: none;
   text-decoration: none;
+  width: 100%;
 }
 
 .swiper-container {
@@ -1182,10 +1184,12 @@ nav.menu-overlay .nav-item a {
     padding: 0 1em;
   }
   nav.menu-overlay .nav-item {
+    overflow-x: unset;
     width: unset;
   }
   nav.menu-overlay .multi-level {
     width: unset;
+    min-width: 1000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1206,10 +1210,13 @@ nav.menu-overlay .nav-item a {
     display: block;
   }
   nav.menu-overlay .multi-level .nav-item ul {
+    min-width: 200px;
     display: none;
     position: absolute;
-    width: 100%;
     background-color: #282828;
+  }
+  nav.menu-overlay .multi-level .nav-item ul label {
+    padding-left: 1em;
   }
   nav.menu-overlay .multi-level .nav-item ul ul {
     top: 0;
@@ -1217,6 +1224,8 @@ nav.menu-overlay .nav-item a {
   }
   nav.menu-overlay .multi-level .nav-item ul li a {
     padding: 1em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   nav.menu-overlay .multi-level .nav-item input:checked ~ ul {
     display: block;
