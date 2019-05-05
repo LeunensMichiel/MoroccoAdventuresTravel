@@ -194,6 +194,14 @@ footer {
     }
 }
 
+.header-container.atlas4x4 {
+    &:after {
+        background: $black url(../assets/images/DSC_0709.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 section {
     display: flex;
     flex-direction: column;
