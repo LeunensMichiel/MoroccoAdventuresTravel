@@ -216,6 +216,12 @@ footer .footer-container a:hover, footer .footer-container a:focus {
   background-position: center;
 }
 
+.header-container.nature4x4:after {
+  background: #282828 url(../assets/images/marokko1101139.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;

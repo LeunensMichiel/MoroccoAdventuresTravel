@@ -210,6 +210,14 @@ footer {
     }
 }
 
+.header-container.nature4x4 {
+    &:after {
+        background: $black url(../assets/images/marokko1101139.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 section {
     display: flex;
     flex-direction: column;
