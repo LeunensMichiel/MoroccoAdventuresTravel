@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
     if (document.querySelector('.swiper-container')) {
         const swiper = new Swiper('.swiper-container', {
             effect: 'fade',

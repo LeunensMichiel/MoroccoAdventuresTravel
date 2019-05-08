@@ -19,6 +19,10 @@ $black: rgba(40, 40, 40, 1);
     width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $fontMain, sans-serif;
     height: 100%;
@@ -61,7 +65,7 @@ footer {
     font-size: .9rem;
     width: 100%;
     text-align: center;
-    padding: 5em 0;
+    padding: 8rem 0;
     box-shadow: inset 0px 0px 129px -29px rgba(0, 0, 0, 0.75);
 
 
@@ -114,6 +118,25 @@ footer {
     &:hover {
         background: $white;
         color: $black;
+        cursor: pointer;
+    }
+}
+
+.secondaryBtn {
+    background: $orange;
+    color: $white;
+    padding: .75em 1.5em;
+    border: none;
+    font-size: 1.2rem;
+    transition: .3s ease-out;
+    margin-top: 25px;
+
+    &:focus,
+    &:hover {
+        background: $light;
+        color: $black;
+        cursor: pointer;
+
     }
 }
 
@@ -225,6 +248,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.atlantic {
     &:after {
         background: $black url(../assets/images/DSC_0213.JPG) no-repeat;
@@ -232,6 +256,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.saghro {
     &:after {
         background: $black url(../assets/images/DSC_0342.JPG) no-repeat;
@@ -239,6 +264,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.tafraout {
     &:after {
         background: $black url(../assets/images/DSC_0899.JPG) no-repeat;
@@ -246,6 +272,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.contact {
     &:after {
         background: $black;
@@ -253,6 +280,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.loop {
     &:after {
         background: $black url(../assets/images/DSC_0899.JPG) no-repeat;
@@ -260,6 +288,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.canyon {
     &:after {
         background: $black url(../assets/images/DSC_0361.JPG) no-repeat;
@@ -267,6 +296,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.rose {
     &:after {
         background: $black url(../assets/images/DSC_0342.JPG) no-repeat;
@@ -274,6 +304,7 @@ footer {
         background-position: center;
     }
 }
+
 .header-container.zagora {
     &:after {
         background: $black url(../assets/images/DSC_0512.JPG) no-repeat;
@@ -281,6 +312,7 @@ footer {
         background-position: center;
     }
 }
+
 section {
     display: flex;
     flex-direction: column;
@@ -578,6 +610,10 @@ main {
     background: $white;
     padding-bottom: 3rem;
 
+    &.form {
+        padding-bottom: 0;
+    }
+
     .main-container {
         padding: 1.5rem;
 
@@ -628,6 +664,141 @@ main {
 
     }
 }
+
+.icon_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    color: $black;
+
+    i {
+        margin-right: 10px;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 0;
+        line-height: 20px;
+    }
+}
+
+//  FORM
+//  https://codepen.io/chrisoncode/pen/IdGKH
+.form-card {
+    background: white;
+    width: 100%;
+    padding: 1em 1em 5rem 1em;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.20), 0 15px 12px rgba(0,0,0,0.12);
+
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 3rem;
+
+        h2 {
+            padding-bottom: 0;
+        }
+
+        .info-container {
+            h3 {
+                padding: .66em 0;
+                margin: 0;
+                line-height: 3rem;
+            }
+        }
+    }
+}
+
+form {
+    width: 100%;
+
+    .formButton {
+        color: $black;
+        border-color: $black;
+    }
+
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+    width: 100%;
+
+    input,
+    textarea {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #757575;
+
+        &:focus {
+            outline: none;
+
+            &~.bar:before,
+            &~.bar:after {
+                width: 50%;
+            }
+        }
+
+        &:focus~label,
+        &:valid~label {
+            top: -20px;
+            font-size: 14px;
+            color: $orange;
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 150px;
+    }
+
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+    }
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: $orange;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
 
 // NAVIGATION
 // ANIMATION BY Aaron Iker
@@ -724,7 +895,6 @@ main {
                 stroke-dasharray: 0 82.801 8 82.801;
                 stroke-dashoffset: 82.801;
                 transform-origin: 50% 50%;
-                -webkit-backface-visibility: hidden;
                 transform: scale(1);
                 transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, transform .5s ease;
 
@@ -793,7 +963,7 @@ nav {
         }
 
         >.nav-item:first-child {
-            padding: 70px 5% 10% 5%;
+            padding: 80px 5% 10% 5%;
         }
 
         a {
@@ -804,7 +974,6 @@ nav {
                 color: $white;
                 font-family: $fontTitle;
                 font-size: 2rem;
-                white-space: nowrap;
                 text-align: center;
                 width: 100%;
                 padding: 0;
@@ -1030,8 +1199,6 @@ nav {
                 width: 66%;
                 margin: 0 auto;
 
-                h3 {}
-
                 >p {
                     text-align: justify;
                     margin: 1.5rem 0;
@@ -1054,6 +1221,46 @@ nav {
         grid-gap: 0 1rem;
     }
 
+    .form-card {
+        background: white;
+        width: 75%;
+        padding: 5rem;
+        margin: 5rem auto;
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 3rem;
+            grid-auto-flow: dense;
+
+
+            h2 {
+                padding: 0;
+                padding-bottom: 0;
+                grid-column: span 2;
+                font-size: 5rem;
+            }
+
+            .info-container {
+                grid-column: 2;
+                h3 {
+                    padding:  0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    form {
+        width: 80%;
+        grid-column: 1;
+
+        .formButton {
+            color: $black;
+            border-color: $black;
+        }
+
+    }
 }
 
 /* desktop-medium */
@@ -1091,6 +1298,7 @@ nav {
         .header {
             font-size: 3rem;
         }
+
         .subheader {
             font-size: .8em;
         }

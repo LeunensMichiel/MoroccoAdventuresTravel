@@ -179,7 +179,51 @@
         <div class="header-container contact">
             <h2 class="header">Contact us</h2>
         </div>
-
+        <main class="form">
+            <div class="form-card">
+                <div class="form-grid">
+                    <h2>Contact us.<br>It's easy.</h2>
+                    <div class="info-container">
+                        <h3>We're situated at</h3>
+                        <div class="icon_text">
+                            <i class='bx bx-home-alt'></i>
+                            <p>Loremipsumstreet 123 <br>Dilbeek 1902 <br>Belgium</p>
+                        </div>
+                        <div class="icon_text">
+                            <i class='bx bxs-phone'></i>
+                            <p>+32 412 34 56 78</p>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/michiel.leunens@gmail.com" method="POST">
+                        <div class="group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>First name</label>
+                        </div>
+                        <div class="group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Last name</label>
+                        </div>
+                        <div class="group">
+                            <input type="email" id="email" name="email" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Email</label>
+                        </div>
+                        <div class="group" required>
+                            <textarea id="message" name="message" required></textarea>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Your message</label>
+                        </div>
+                        <input class="secondaryBtn" type="submit" value="Send message" />
+                    </form>
+                </div>
+            </div>
+        </main>
         <!-- Footer -->
         <footer>
             <div class="footer-item">
