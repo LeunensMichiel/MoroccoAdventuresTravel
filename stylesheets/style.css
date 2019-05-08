@@ -222,6 +222,60 @@ footer .footer-container a:hover, footer .footer-container a:focus {
   background-position: center;
 }
 
+.header-container.lakes4x4:after {
+  background: #282828 url(../assets/images/DSC_0897.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.atlantic:after {
+  background: #282828 url(../assets/images/DSC_0213.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.saghro:after {
+  background: #282828 url(../assets/images/DSC_0342.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.tafraout:after {
+  background: #282828 url(../assets/images/DSC_0899.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.contact:after {
+  background: #282828;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.loop:after {
+  background: #282828 url(../assets/images/DSC_0899.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.canyon:after {
+  background: #282828 url(../assets/images/DSC_0361.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.rose:after {
+  background: #282828 url(../assets/images/DSC_0342.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.zagora:after {
+  background: #282828 url(../assets/images/DSC_0512.JPG) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +419,14 @@ section article .article-container .article-item:nth-child(even) {
 
 section article .article-container .article-item:nth-child(even) h3 {
   color: #f3c034;
+}
+
+section article .article-container .option-splitter {
+  font-size: 2rem;
+  width: 80%;
+  padding: .5em 0;
+  margin: 1em 0;
+  border-bottom: 3px solid #ff7a28;
 }
 
 section article .article-container .article-item {
@@ -590,8 +652,8 @@ main .block-image img {
 .hamburger {
   position: fixed;
   z-index: 100;
-  top: 25px;
-  right: 22px;
+  top: 30px;
+  right: 30px;
 }
 
 .toggle {
@@ -1034,6 +1096,12 @@ nav.menu-overlay .nav-item a {
   }
   footer .footer-container .social-icons i {
     font-size: 1.8rem;
+  }
+  .header-container .header {
+    font-size: 3rem;
+  }
+  .header-container .subheader {
+    font-size: .8em;
   }
   section aside {
     padding: 5em 0;

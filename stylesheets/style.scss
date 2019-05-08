@@ -218,6 +218,69 @@ footer {
     }
 }
 
+.header-container.lakes4x4 {
+    &:after {
+        background: $black url(../assets/images/DSC_0897.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.atlantic {
+    &:after {
+        background: $black url(../assets/images/DSC_0213.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.saghro {
+    &:after {
+        background: $black url(../assets/images/DSC_0342.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.tafraout {
+    &:after {
+        background: $black url(../assets/images/DSC_0899.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.contact {
+    &:after {
+        background: $black;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.loop {
+    &:after {
+        background: $black url(../assets/images/DSC_0899.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.canyon {
+    &:after {
+        background: $black url(../assets/images/DSC_0361.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.rose {
+    &:after {
+        background: $black url(../assets/images/DSC_0342.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.header-container.zagora {
+    &:after {
+        background: $black url(../assets/images/DSC_0512.JPG) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
 section {
     display: flex;
     flex-direction: column;
@@ -337,6 +400,14 @@ section {
                 h3 {
                     color: $yellow;
                 }
+            }
+
+            .option-splitter {
+                font-size: 2rem;
+                width: 80%;
+                padding: .5em 0;
+                margin: 1em 0;
+                border-bottom: 3px solid $orange;
             }
 
             .article-item {
@@ -563,8 +634,8 @@ main {
 .hamburger {
     position: fixed;
     z-index: 100;
-    top: 25px;
-    right: 22px;
+    top: 30px;
+    right: 30px;
 }
 
 .toggle {
@@ -1013,6 +1084,15 @@ nav {
                     font-size: 1.8rem;
                 }
             }
+        }
+    }
+
+    .header-container {
+        .header {
+            font-size: 3rem;
+        }
+        .subheader {
+            font-size: .8em;
         }
     }
 
