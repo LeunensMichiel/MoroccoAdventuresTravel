@@ -429,19 +429,17 @@ section article .article-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f8f8f8;
+  background-color: white;
   color: #282828;
 }
 
 section article .article-container .article-item:nth-child(even) {
-  background-color: #282828;
-  color: #f8f8f8;
-  -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
+  background-color: #f8f8f8;
+  color: #282828;
 }
 
 section article .article-container .article-item:nth-child(even) h3 {
-  color: #f3c034;
+  color: #ff7a28;
 }
 
 section article .article-container .option-splitter {
@@ -1327,13 +1325,13 @@ nav.menu-overlay .nav-item a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 50vh;
+    height: 66vh;
     position: relative;
   }
   section aside .aside-container {
     background: #ffeee5;
-    padding: 1em 0;
-    height: 80%;
+    padding: 1rem 0;
+    height: 90%;
     position: absolute;
     top: 25%;
     left: 20%;
@@ -1342,6 +1340,7 @@ nav.menu-overlay .nav-item a {
   }
   section aside .aside-container h2 {
     margin-bottom: 1em;
+    font-size: 3rem;
   }
   section aside .aside-container .overview {
     width: 50%;
@@ -1379,15 +1378,6 @@ nav.menu-overlay .nav-item a {
   section article.intro > p {
     width: 50%;
     margin: .66rem 0;
-  }
-  section article .article-container .article-item:nth-child(even) {
-    background-color: #282828;
-    color: #f8f8f8;
-    -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
-  }
-  section article .article-container .article-item:nth-child(even) h3 {
-    color: #f3c034;
   }
   section article .article-container .article-item {
     width: 100%;

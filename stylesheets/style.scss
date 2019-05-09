@@ -421,16 +421,15 @@ section {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: $white;
+            background-color: white;
             color: $black;
 
             .article-item:nth-child(even) {
-                background-color: $black;
-                color: $white;
-                box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
+                background-color: $white;
+                color: $black;
 
                 h3 {
-                    color: $yellow;
+                    color: $orange;
                 }
             }
 
@@ -1312,14 +1311,14 @@ nav {
             justify-content: flex-end;
             align-items: flex-end;
             flex-direction: row;
-            height: 50vh;
+            height: 66vh;
             position: relative;
 
 
             .aside-container {
                 background: $light;
-                padding: 1em 0;
-                height: 80%;
+                padding: 1rem 0;
+                height: 90%;
                 position: absolute;
                 top: 25%;
                 left: 20%;
@@ -1328,6 +1327,7 @@ nav {
 
                 h2 {
                     margin-bottom: 1em;
+                    font-size: 3rem;
                 }
 
                 .overview {
@@ -1371,13 +1371,6 @@ nav {
             .article-container {
 
                 .article-item:nth-child(even) {
-                    background-color: $black;
-                    color: $white;
-                    box-shadow: inset 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
-
-                    h3 {
-                        color: $yellow;
-                    }
                 }
 
                 .article-item {
