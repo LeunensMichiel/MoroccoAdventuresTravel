@@ -159,7 +159,7 @@ footer {
     &:after {
         content: "";
         position: absolute;
-        background: $black url(../assets/images/highAtlas.JPG) no-repeat;
+        background: $black url('../assets/images/high_atlas/06\ carlo\ \(11\).jpg') no-repeat;
         background-size: cover;
         top: 0;
         left: 0;
@@ -188,30 +188,55 @@ footer {
     }
 }
 
-.header-container.daytrips {
+
+.header-container.middleAtlas {
     &:after {
-        background: $black url(../assets/images/daytripsMarrakech.JPG) no-repeat;
+        background: $black url('../assets/images/middle_atlas/lac\ ouiouane.jpg') no-repeat;
         background-size: cover;
     }
 }
-
+.header-container.daytrips {
+    &:after {
+        background: $black url(../assets/images/daytours_Esaouira/IMG_1771.JPG) no-repeat;
+        background-size: cover;
+    }
+}
+.header-container.ouzoud {
+    &:after {
+        background: $black url(../assets/images/daytours_ouzoud/IMG_0442.JPG) no-repeat;
+        background-size: cover;
+    }
+}
+.header-container.ourika {
+    &:after {
+        background: $black url(../assets/images/daytours_ourika/DSC_0048.JPG) no-repeat;
+        background-size: cover;
+    }
+}
 .header-container.daytrips2 {
     &:after {
-        background: $black url(../assets/images/DSC_0028.JPG) no-repeat;
+        background: $black url('../assets/images/daytours_ouarzazate/ait\ ben\ haddou5.JPG') no-repeat;
+        background-size: cover;
+    }
+}
+.header-container.skoura {
+    &:after {
+        background: $black url('../assets/images/daytours_roseValley/@lieve\ maveau\ \(14\).JPG') no-repeat;
         background-size: cover;
     }
 }
 
 .header-container.bougmaze {
     &:after {
-        background: $black url(../assets/images/DSC_0102.JPG) no-repeat;
+        background: $black url('../assets/images/bougmaze/1707AM023\ \(2\).jpg') no-repeat;
         background-size: cover;
+        background-position: center;
     }
 }
 
 .header-container.selfie {
     &:after {
-        background: $black url(../assets/images/selfie.jpg) no-repeat;
+        background: $black url('../assets/images/aboutUs/sept\ 2015.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -219,7 +244,7 @@ footer {
 
 .header-container.atlas4x4 {
     &:after {
-        background: $black url(../assets/images/DSC_0709.JPG) no-repeat;
+        background: $black url('../assets/images/4x4atlasAndDesert/marokko\ dec2008\ 079\ \(2\).jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -227,7 +252,7 @@ footer {
 
 .header-container.special4x4 {
     &:after {
-        background: $black url(../assets/images/DSC_0827.JPG) no-repeat;
+        background: $black url(../assets/images/4x4special/IMG_0514.JPG) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -235,7 +260,7 @@ footer {
 
 .header-container.nature4x4 {
     &:after {
-        background: $black url(../assets/images/marokko1101139.JPG) no-repeat;
+        background: $black url('../assets/images/4x4citiesNature/108-\ 13mei\ Koranschool\ Medersa\ Ben\ Youssef.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -243,7 +268,7 @@ footer {
 
 .header-container.lakes4x4 {
     &:after {
-        background: $black url(../assets/images/DSC_0897.JPG) no-repeat;
+        background: $black url(../assets/images/4x4lakes/P6030222.JPG) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -251,7 +276,7 @@ footer {
 
 .header-container.atlantic {
     &:after {
-        background: $black url(../assets/images/DSC_0213.JPG) no-repeat;
+        background: $black url('../assets/images/atlantic/atlantic\ coast\ 3.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -259,7 +284,7 @@ footer {
 
 .header-container.saghro {
     &:after {
-        background: $black url(../assets/images/DSC_0342.JPG) no-repeat;
+        background: $black url(../assets/images/saghro/DSC_0617.JPG) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -267,7 +292,7 @@ footer {
 
 .header-container.tafraout {
     &:after {
-        background: $black url(../assets/images/DSC_0899.JPG) no-repeat;
+        background: $black url(../assets/images/tafraout_valley/Village-tafraout.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -275,7 +300,7 @@ footer {
 
 .header-container.contact {
     &:after {
-        background: $black;
+        background-image: url(../assets/images/main_page/DSC_0521.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -283,7 +308,7 @@ footer {
 
 .header-container.loop {
     &:after {
-        background: $black url(../assets/images/DSC_0899.JPG) no-repeat;
+        background: $black url('../assets/images/loop/WhatsApp\ Image\ 2018-11-03\ at\ 9.06.23\ AM.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -291,7 +316,7 @@ footer {
 
 .header-container.canyon {
     &:after {
-        background: $black url(../assets/images/DSC_0361.JPG) no-repeat;
+        background: $black url('../assets/images/canyon/a26.jpg') no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -299,7 +324,7 @@ footer {
 
 .header-container.rose {
     &:after {
-        background: $black url(../assets/images/DSC_0342.JPG) no-repeat;
+        background: $black url(../assets/images/rose_valley/DSC00652.JPG) no-repeat;
         background-size: cover;
         background-position: center;
     }
@@ -307,10 +332,25 @@ footer {
 
 .header-container.zagora {
     &:after {
-        background: $black url(../assets/images/DSC_0512.JPG) no-repeat;
+        background: $black url(../assets/images/zagora/FB_IMG_1521363309592.jpg) no-repeat;
         background-size: cover;
         background-position: center;
     }
+}
+
+#photo2 {
+    background-image: url(../assets/images/main_page/DSC_0102.JPG);
+    background-position: right;
+}
+#photo1 {
+    background-image: url(../assets/images/main_page/DSC_0897.JPG);
+    background-position: right;
+}
+#photo3 {
+    background-image: url(../assets/images/main_page/DSC_0150.JPG);
+}
+#photo4 {
+    background-image: url(../assets/images/main_page/DSC_0028.JPG);
 }
 
 section {
@@ -648,27 +688,27 @@ main {
         text-align: justify;
 
     }
+}
 
-    .block-image {
+.block-image {
+    width: 100%;
+    height: 33vh;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        display: block;
         width: 100%;
-        height: 33vh;
-        overflow: hidden;
-
-        img {
-            object-fit: cover;
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-
+        height: 100%;
     }
+
 }
 
 .icon_text {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 5px;
     color: $black;
 
@@ -680,6 +720,7 @@ main {
     p {
         margin: 0;
         line-height: 20px;
+        padding: 0;
     }
 }
 
