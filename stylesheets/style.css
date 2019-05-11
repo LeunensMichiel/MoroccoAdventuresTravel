@@ -664,8 +664,21 @@ main {
   padding-bottom: 3rem;
 }
 
-main.form {
+main.form, main.fb {
   padding-bottom: 0;
+}
+
+main.fb {
+  padding: 5rem 1rem;
+}
+
+main.fb h2 {
+  padding-bottom: 0;
+}
+
+main.fb h3 {
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 main .main-container {
@@ -683,7 +696,7 @@ main .main-container:first-of-type p:first-of-type::first-letter {
 }
 
 main h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   padding: 2.5rem 0;
 }
@@ -1461,6 +1474,11 @@ nav.menu-overlay .nav-item a {
         align-content: center;
     position: relative;
     padding: 5rem;
+  }
+  main.fb {
+    width: 50%;
+    margin: 10rem auto;
+    padding: 0;
   }
   main p {
     padding: .5rem 0;

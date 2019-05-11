@@ -649,8 +649,21 @@ main {
     background: $white;
     padding-bottom: 3rem;
 
-    &.form {
+    &.form , &.fb {
         padding-bottom: 0;
+    }
+
+    &.fb {
+        padding: 5rem 1rem;
+
+        h2 {
+            padding-bottom: 0;
+        }
+
+        h3 {
+            margin-top: 1rem;
+            padding-bottom: 2.5rem;
+        }
     }
 
     .main-container {
@@ -672,7 +685,7 @@ main {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin: 0;
         padding: 2.5rem 0;
     }
@@ -686,7 +699,6 @@ main {
 
     p {
         text-align: justify;
-
     }
 }
 
@@ -1461,7 +1473,13 @@ nav {
         justify-content: center;
         align-content: center;
         position: relative;
-        padding: 5rem;
+        padding: 5rem;   
+        
+        &.fb {
+            width: 50%;
+            margin: 10rem auto;
+            padding: 0;
+        }
 
         p {
             padding: .5rem 0;
