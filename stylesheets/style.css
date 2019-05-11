@@ -321,21 +321,21 @@ footer .footer-container a:hover, footer .footer-container a:focus {
 }
 
 #photo2 {
-  background-image: url(../assets/images/main_page/DSC_0102.JPG);
+  background-image: url("../assets/images/main_page/DSC_0102.JPG");
   background-position: right;
 }
 
 #photo1 {
-  background-image: url(../assets/images/main_page/DSC_0897.JPG);
+  background-image: url("../assets/images/main_page/DSC_0897.JPG");
   background-position: right;
 }
 
 #photo3 {
-  background-image: url(../assets/images/main_page/DSC_0150.JPG);
+  background-image: url("../assets/images/main_page/DSC_0150.JPG");
 }
 
 #photo4 {
-  background-image: url(../assets/images/main_page/DSC_0028.JPG);
+  background-image: url("../assets/images/main_page/DSC_0028.JPG");
 }
 
 section {
