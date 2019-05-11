@@ -31,6 +31,12 @@ a:hover {
   color: #f3c034;
 }
 
+#newsletter {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
@@ -292,6 +298,12 @@ footer .footer-container a:hover, footer .footer-container a:focus {
 
 .header-container.contact:after {
   background-image: url(../assets/images/main_page/DSC_0521.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container.newsletter:after {
+  background-image: url(../assets/images/main_page/DSC_0709.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -666,6 +678,10 @@ main {
 
 main.form, main.fb {
   padding-bottom: 0;
+}
+
+main.newsletter {
+  padding: 1.5rem;
 }
 
 main.fb {
@@ -1475,7 +1491,7 @@ nav.menu-overlay .nav-item a {
     position: relative;
     padding: 5rem;
   }
-  main.fb {
+  main.fb, main.newsletter {
     width: 50%;
     margin: 10rem auto;
     padding: 0;
@@ -1496,6 +1512,9 @@ nav.menu-overlay .nav-item a {
     top: 3rem;
     bottom: 0;
     right: 5rem;
+  }
+  main h2 {
+    font-size: 5rem;
   }
   .hamburger {
     display: none;

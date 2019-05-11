@@ -4,9 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="fb:app_id" content="333862640660389" />
-        <!-- <meta property="fb:admins" content="10213189443546154"/>
-        <meta property="fb:admins" content="100001449416967"/> -->
+        <meta property="fb:admins" content="100001449416967" />
+        <meta property="og:url" content="URL" />
+        <meta property="og:title" content="TITLE" />
+        <meta property="og:description" content="DESC" />
+        <meta property="og:image" content="IMG" />
 
         <title>Morocco Adventures Travel</title>
         <meta name="Information" content="Guestbook">
@@ -19,6 +21,9 @@
     </head>
 
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.3"></script>
         <!-- Navigation Bar -->
         <label class="toggle hamburger">
             <input type="checkbox" id="togglemenu">
@@ -187,11 +192,7 @@
             <main class="fb">
                 <h2>Enjoyed Morocco?</h2>
                 <h3>Leave a message behind.</h3>
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous"
-                    src="https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v3.3"></script>
-                <div class="fb-comments"
-                    data-href="https://developers.facebook.com/docs/plugins/comments/MorrocoAdventuresTravelTest"
+                <div class="fb-comments" data-href="www.morrocoadventurestraveltest.com"
                     data-width="100%" data-numposts="5"></div>
             </main>
             <!-- Footer -->
