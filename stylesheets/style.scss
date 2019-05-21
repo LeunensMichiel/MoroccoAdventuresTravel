@@ -189,7 +189,7 @@ footer {
         margin-top: 5px;
         color: $white;
         text-align: center;
-        font-size: .5em;
+        font-size: .8em;
         text-transform: uppercase;
         width: 80%;
     }
@@ -1504,7 +1504,8 @@ nav {
         position: relative;
         padding: 5rem;
 
-        &.fb, &.newsletter {
+        &.fb,
+        &.newsletter {
             width: 50%;
             margin: 10rem auto;
             padding: 0;
