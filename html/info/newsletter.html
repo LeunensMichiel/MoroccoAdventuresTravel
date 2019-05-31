@@ -183,6 +183,7 @@
             </div>
             <main class="newsletter">
                 <h2>Our newsletter.</h2>
+                <p>Can't see our newsletter? Download it <a href="../../assets/pdf/newsletter.pdf" download>here!</a></p>
                 <div id="newsletter"></div>
             </main>
             <!-- Footer -->
@@ -222,7 +223,7 @@
                 },
                 pagemode: 'thumbs',
                 search: 'lorem ipsum',
-                fallbackLink: '<p>Hey! Your browser does not support inline PDFs. Please download our newsletter PDF to view it! <a href="[url]" download>Download PDF</a></p>',
+                fallbackLink: '',
             };
             PDFObject.embed("../../assets/pdf/newsletter.pdf", "#newsletter", options);
 

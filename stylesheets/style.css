@@ -857,6 +857,13 @@ form {
   width: 100%;
 }
 
+form p {
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 16px;
+  color: #757575;
+}
+
 form .formButton {
   color: #282828;
   border-color: #282828;
@@ -866,6 +873,10 @@ form .formButton {
   position: relative;
   margin-bottom: 45px;
   width: 100%;
+}
+
+.group:last-of-type {
+  margin-bottom: 16px;
 }
 
 .group input,
