@@ -459,7 +459,8 @@ section {
             background: $white;
 
             >p {
-                font-size: 1rem;
+                font-size: 16px;
+                line-height: 24px;
                 text-align: justify;
                 padding: 0;
 
@@ -518,12 +519,29 @@ section {
 
                 p {
                     text-align: justify;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
 
                 h3 {
                     font-size: 1.8rem;
+                    margin-bottom: 2rem;
+
+                    span {
+                        font-size: 1.2rem;
+                    }
                 }
 
+                &.article-photo {
+                    padding: 0;
+
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }
@@ -547,6 +565,8 @@ section {
             >p {
                 text-align: justify;
                 margin: 1rem 0;
+                font-size: 16px;
+                line-height: 24px;
 
                 &:first-of-type {
                     font-size: 1.1rem;
@@ -564,6 +584,8 @@ section {
                         >p {
                             text-align: justify;
                             margin: 1rem 0;
+                            font-size: 16px;
+                            line-height: 24px;
 
                             &:first-of-type {
                                 font-size: 1.1rem;
@@ -639,8 +661,9 @@ section {
             width: 100%;
 
             p {
+                font-family: $fontTitle, sans-serif;
                 text-align: center;
-                font-size: .66rem;
+                font-size: .9rem;
                 font-style: italic;
                 margin: 0;
                 padding: 0 3rem;
@@ -653,6 +676,8 @@ section {
 
         p {
             text-align: justify;
+            font-size: 16px;
+            line-height: 24px;
 
             &:first-of-type {
                 &::first-letter {
@@ -661,6 +686,8 @@ section {
                     color: $orange;
                     font-weight: 600;
                 }
+                font-size: 18px;
+                line-height: 24px;
             }
         }
 
@@ -728,6 +755,8 @@ main {
 
     p {
         text-align: justify;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -1481,7 +1510,7 @@ nav {
 
                     h3,
                     p {
-                        width: 50%;
+                        max-width: 700px;
                         margin: 0 auto;
                         display: block;
                         padding: 1em 0;
@@ -1489,6 +1518,11 @@ nav {
 
                     p {
                         text-align: justify;
+                    }
+
+                    &.article-photo {
+                        height: 50vh;
+
                     }
 
                 }
@@ -1502,6 +1536,7 @@ nav {
         justify-content: center;
         align-content: center;
         position: relative;
+        min-height: 860px;
         padding: 5rem;
 
         &.fb,
@@ -1526,9 +1561,11 @@ nav {
             position: absolute;
             width: 45%;
             height: 500px;
-            top: 3rem;
-            bottom: 0;
+            top: 50%;
+            bottom: 50%;
             right: 5rem;
+            margin-top: -25vh;
+            margin-bottom: -25vh;
         }
 
         h2 {
