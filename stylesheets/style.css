@@ -461,7 +461,6 @@ section article.intro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: -100px;
 }
 
 section article.intro > p {
@@ -469,6 +468,7 @@ section article.intro > p {
   line-height: 24px;
   text-align: justify;
   padding: 0;
+  margin: 8px 0;
 }
 
 section article.intro > p:first-of-type {
@@ -1492,6 +1492,9 @@ nav.menu-overlay .nav-item a {
   }
   section article {
     margin-top: 100px;
+  }
+  section article.intro {
+    margin-bottom: -100px;
   }
   section article.intro > p {
     width: 50%;
