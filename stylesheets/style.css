@@ -216,6 +216,7 @@ footer .footer-container a:hover, footer .footer-container a:focus {
 .header-container.middleAtlas:after {
   background: #282828 url("../assets/images/middle_atlas/lac ouiouane.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-container.daytrips:after {
@@ -1318,7 +1319,7 @@ nav.menu-overlay .nav-item a {
 /* tablet-large */
 @media all and (min-width: 601px) and (orientation: portrait) {
   .landing-container img {
-    width: 66%;
+    width: 40%;
   }
   .landing-container p {
     font-size: 1rem;
@@ -1356,7 +1357,7 @@ nav.menu-overlay .nav-item a {
 /* desktop-medium-landscape */
 @media all and (min-width: 841px) and (orientation: landscape) {
   .landing-container img {
-    width: 40%;
+    width: 25%;
   }
   section.about {
     width: 100%;

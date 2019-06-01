@@ -201,6 +201,7 @@ footer {
     &:after {
         background: $black url('../assets/images/middle_atlas/lac\ ouiouane.jpg') no-repeat;
         background-size: cover;
+        background-position: center;
     }
 }
 
@@ -1284,7 +1285,7 @@ nav {
 @media all and (min-width: 601px) and (orientation : portrait) {
     .landing-container {
         img {
-            width: 66%;
+            width: 40%;
         }
 
         p {
@@ -1341,7 +1342,7 @@ nav {
 @media all and (min-width: 841px) and (orientation: landscape) {
     .landing-container {
         img {
-            width: 40%;
+            width: 25%;
         }
     }
 
