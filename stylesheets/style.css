@@ -220,18 +220,21 @@ footer .footer-container a:hover, footer .footer-container a:focus {
 }
 
 .header-container.daytrips:after {
-  background: #282828 url(../assets/images/daytours_Esaouira/IMG_1771.jpg) no-repeat;
+  background: #282828 url("../assets/images/daytours_Esaouira/IMG_1771.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-container.ouzoud:after {
-  background: #282828 url(../assets/images/daytours_ouzoud/IMG_0442.jpg) no-repeat;
+  background: #282828 url("../assets/images/daytours_ouzoud/IMG_0442.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-container.ourika:after {
-  background: #282828 url(../assets/images/daytours_ourika/DSC_0048.jpg) no-repeat;
+  background: #282828 url("../assets/images/daytours_ourika/DSC_0048.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-container.daytrips2:after {
@@ -242,6 +245,7 @@ footer .footer-container a:hover, footer .footer-container a:focus {
 .header-container.skoura:after {
   background: #282828 url("../assets/images/daytours_roseValley/@lieve maveau (14).jpg") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-container.bougmaze:after {
@@ -263,7 +267,7 @@ footer .footer-container a:hover, footer .footer-container a:focus {
 }
 
 .header-container.special4x4:after {
-  background: #282828 url(../assets/images/4x4special/IMG_0514.JPG) no-repeat;
+  background: #282828 url("../assets/images/4x4special/2503 16 (2).jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1550,7 +1554,7 @@ nav.menu-overlay .nav-item a {
   }
   main.fb, main.newsletter {
     width: 50%;
-    margin: 10rem auto;
+    margin: 5rem auto;
     padding: 0;
   }
   main p {
